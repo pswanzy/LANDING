@@ -16,14 +16,24 @@ body {
     max-width: 75%;
     margin: auto;
     padding: 20px;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+}
+.container-center {
+    max-width: 60%;
+    background: #e3f0fe;
+    border-radius: 5%;
+    margin: auto;
+    align-items: center;
+    padding: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
   
-  header {
+header {
     background-color: #204051;
     padding: 20px 0;
-  }
-  nav {
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,7 +100,11 @@ nav ul li a:hover {
 }
 
 .form-container {
-    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto; /* Centers */
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 section#main {
@@ -98,14 +112,36 @@ section#main {
     justify-content: space-between;
     padding: 50px 0;
   }
+
+.fixed-background-B {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/001-2016-Ruby-Poolenalena-6582.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end
+}
   
+.content-B {
+    position: relative;
+    z-index: 10;
+    color: #007bff; 
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2em;
+}
+
 .column {
     text-align: center;
     padding: 20px;
 }
 
 .column p {
-    max-width: 60%;
+    max-width: 70%;
     margin: auto;
     text-align: left;
 }
