@@ -5,3 +5,12 @@ window.addEventListener('scroll', () => {
     // Update the image or sprite sheet position here
   });
   
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    const nav = document.querySelector('.navigation ul');
+    if (nav.style.display === 'block') {
+      nav.style.display = 'none';
+    } else {
+      nav.style.display = 'block';
+    }
+  });
+  

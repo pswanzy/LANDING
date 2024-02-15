@@ -131,8 +131,8 @@ section#main {
     z-index: 10;
     color: #007bff; 
     text-align: center;
-    padding-bottom: 20px;
-    font-size: 2em;
+    padding-bottom: 30px;
+    font-size: 1.7em;
 }
 
 .column {
@@ -181,7 +181,7 @@ input[type=submit]:hover {
     background-color: #0056b3;
 }
 
-  footer {
+footer {
     text-align: center;
     padding: 20px;
     background: #007bff;
@@ -219,4 +219,17 @@ input[type=submit]:hover {
     nav ul li {
     margin-left: 10px; /* Less space between links on smaller screens */
     }
+    
+    .hamburger {
+        display: block; /* Show hamburger icon */
+      }
+    
+      .navigation ul {
+        display: none; /* Hide menu */
+        flex-direction: column; /* Stack menu items vertically */
+      }
+    
+      .navigation ul li {
+        margin: 10px 0; /* Adjust spacing for vertical layout */
+      }
 }
